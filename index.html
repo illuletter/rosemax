@@ -1,12 +1,89 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A student portfolio showcasing projects, achievements, and skills in web development and academics.">
+    <title>rosemax</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="assets/favicon.ico" />
+    <link rel="prefetch" href="assets/summertime_image.jpg" />
     <style>
-      h1, p { color: #ffd17b; }
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        overflow: hidden;
+      }
+      .container {
+        background-color: #f0f0f0;
+        height: 100vh;
+        background-image: url('assets/summertime_image.jpg');
+        background-size: cover;
+        background-position: center;
+        color: #ffd17b;
+        text-transform: uppercase;
+      }
+      #title {
+        position: fixed;
+        top: 40vh;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0 4em;
+        box-sizing: border-box;
+      }
+      #title h1 { 
+        font-size: 3rem;
+        margin: 1rem;
+      }
+      #title p { 
+        font-size: 1.5rem;
+        margin: 1rem;
+      }
+      #description {
+        position: fixed;
+        bottom: 5vh;
+        left: 4em;
+        width: 30em;
+        padding: 1rem;
+        font-size: 1rem;
+      }
+      .links {
+        display: flex;
+        flex-direction: row;
+        gap: 2em;
+        margin-top: 1rem;
+        color: #ffd17b;
+      }
+      .links a:link {
+        text-decoration: none;
+      }
+      .links a:visited {
+        text-decoration: none;
+      }
+      .links a:hover {
+        text-decoration: none;
+      }
     </style>
   </head>
   <body>
-    <h1>rosemax</h1>
-    <p>rise to the max</p>
+    <div class="container">
+      <div id="title">
+        <h1>rosemax</h1>
+        <p>rise to the max</p>
+      </div>
+      <div id="description">
+        <p>A student portfolio showcasing projects, achievements, and skills in web development and academics.</p>
+        <div class="links">
+          <a href="ftp/ftp.html" title="FTP Folder"><i class="fa-solid fa-folder-closed"></i></a>
+          <a href="portfolio/portfolio.html" title="Portfolio"><i class="fa-solid fa-circle-user"></i></a>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/fe40b25ac7.js" crossorigin="anonymous"></script>
   </body>
 </html>
