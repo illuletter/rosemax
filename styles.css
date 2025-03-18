@@ -1,1 +1,81 @@
-/* Styles */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: "Montserrat", Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+  }
+  .container {
+    height: 100vh;
+    background-image: url('assets/summertime_image.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #ffd17b;
+    text-transform: uppercase;
+    padding: 5rem;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-rows: 3fr 1fr;
+  }
+  #title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 0.05rem;
+  }
+  #title h1 { 
+    font-size: 2rem;
+  }
+  #description {
+    width: 30em;
+    align-self: end;
+  }
+  #description h2, 
+  #description p {
+    font-size: 0.75em;
+    line-height: 1.5em;
+    letter-spacing: 0.005rem;
+    transition: opacity 1s ease-in-out;
+  }
+  .links {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    margin-top: 1rem;
+    font-size: 0.9em;
+  }
+  .links a:link,
+  .links a:visited,
+  .links a:hover,
+  .links a:active {
+    text-decoration: none;
+    color: #ffd17b;
+  }
+  @media screen and (max-width: 600px) {
+    .container {
+      padding: 2rem;
+    }
+    #title {
+      flex-direction: column;
+      justify-content: center;
+      align-items: start;
+    }
+    #title h1,
+    #title p {
+        margin: 0.25em 0;
+    }
+    #description {
+      width: 100%;
+    }
+    #description h2, 
+    #description p {
+      font-size: 0.5em;
+    }
+  }
