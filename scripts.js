@@ -2,7 +2,7 @@ const descriptionText = document.querySelector('#description p');
 const links = document.querySelectorAll('.links a');
 
 const messages = {
-  "FTP Folder": "Share files in a flash with FTP",
+  "SFTP": "Share files in a flash with SFTP",
   "Portfolio": "Discover projects, web development and academic achievements",
   "Spotify": "Dive into personally curated playlists",
   "Instagram": "Venture into journeys with photos and moments"
